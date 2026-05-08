@@ -7,7 +7,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./register.jsx";
 import Login from "./Login.jsx";
 import Success from "./success.jsx";
-import Profile from "./profile.jsx";
 import LogoutScreen from "./logout.jsx";
 
 const router = createBrowserRouter([

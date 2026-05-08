@@ -108,7 +108,6 @@ All requests target **`https://api.freeapi.app/api/v1/users`**:
 | `POST` | `/register` | Create a new user |
 | `POST` | `/login` | Authenticate & start a session |
 | `POST` | `/logout` | End the current session |
-| `GET` | `/current-user` | Retrieve the logged-in user's profile |
 
 ---
 
