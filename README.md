@@ -11,7 +11,6 @@ A modern, fast, and sleek React authentication app built with **Vite**. It provi
 | **Register** | Create an account with username, email & password via `POST /users/register` |
 | **Login** | Authenticate with username & password via `POST /users/login` |
 | **Logout** | End the session via `POST /users/logout` with an auto-redirect back to home |
-| **Current User** | Fetch the authenticated user's profile via `GET /users/current-user` |
 | **Dark Themed UI** | Custom CSS design system with CSS variables, gradient orbs, glassmorphic cards, and smooth transitions |
 | **Client-Side Routing** | Instant page transitions with React Router v7 (`createBrowserRouter`) |
 
@@ -80,7 +79,6 @@ authentication-react/
     ├── Login.jsx         # Login form → POST /users/login
     ├── success.jsx       # Post-auth success screen + logout action
     ├── logout.jsx        # Logout confirmation with auto-redirect
-    ├── profile.jsx       # Current user profile (GET /users/current-user)
     ├── App.css           # Component-level styles (cards, buttons, forms)
     └── index.css         # Global styles & CSS design tokens
 ```

@@ -8,6 +8,7 @@ function Register() {
     role: "ADMIN",
     username: "",
   });
+  const [Error, setError] = useState("")
   const navigate = useNavigate();
 
   function set(field) {
@@ -32,6 +33,9 @@ function Register() {
       console.log(data.message);
       if (data.success == true) {
         navigate("/success");
+      }
+      if(data.message === "Received data is not valid"){
+        setError("Please Enter Username, Email and Password")
       }
       return;
     } catch (error) {
@@ -65,7 +69,7 @@ function Register() {
               placeholder="you@example.com"
               value={Form.email}
               onChange={set("email")}
-            />
+              />
           </div>
           <div className="form-group">
             <label className="form-label" htmlFor="password-input">Password</label>
@@ -78,6 +82,7 @@ function Register() {
               onChange={set("password")}
             />
           </div>
+            <p className="error">{Error}</p>
           <button className="btn btn-primary" type="submit">Create Account</button>
           <p className="auth-footer">
             Already have an account?{" "}

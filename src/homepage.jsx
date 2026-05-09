@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function HomePage() {
-  const [state, setState] = useState();
+
   const navigate = useNavigate()
 
   return (

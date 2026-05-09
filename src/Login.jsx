@@ -6,6 +6,7 @@ function Login() {
     password: "",
     username: "",
   });
+  const [Error, setError] = useState("")
   const navigate = useNavigate();
 
   function set(field){
@@ -31,11 +32,15 @@ function Login() {
       if (data.success == true) {
         navigate("/success");
       }
-      return;
+        if(data.message === "Received data is not valid"){
+        setError("Please Enter Username and Password")
+      }
+      return 
     } catch (error) {
       console.error(error);
     }
   }
+
 
   return (
     <div className="page-wrapper">
@@ -53,6 +58,7 @@ function Login() {
             <input className="form-input" type="password" id="password-input" placeholder="Enter your password" value={Form.password} onChange={set("password")} />
           </div>
 
+          <p className="error">{Error}</p>
           <button className="btn btn-primary" type="submit">Sign In</button>
           <p className="auth-footer">
             New to AuthenticatOR?{" "}

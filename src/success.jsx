@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Success() {
-  const [state, setState] = useState();
   const navigate = useNavigate();
 
   async function logoutAPI() {
