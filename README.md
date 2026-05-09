@@ -41,8 +41,8 @@ A modern, fast, and sleek React authentication app built with **Vite**. It provi
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/authentication-react.git
-cd authentication-react
+git clone https://github.com/imayushsawant/authenticatOR-react
+cd authenticatOR-react
 
 # 2. Install dependencies
 pnpm install
